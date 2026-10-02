@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-02T15:00:00Z",
+  "title": "Design System: IRINA",
+  "extensions": {
+    "colorMeta": {
+      "cobalt": { "role": "primary", "displayName": "Cobalt Cover" },
+      "paper": { "role": "neutral", "displayName": "Gloss Paper" },
+      "ink": { "role": "neutral", "displayName": "Ink" },
+      "night": { "role": "neutral", "displayName": "Colophon Night" }
+    },
+    "typographyMeta": {
+      "masthead": { "displayName": "Masthead", "purpose": "IRINA DINGA only, fitted to container width." },
+      "display": { "displayName": "Display", "purpose": "Section headings." }
+    },
+    "shadows": [
+      { "name": "paper-lift", "value": "0 24px 40px -20px rgba(0,0,0,.45), 0 3px 8px rgba(0,0,0,.18)", "purpose": "Tip-on card on the cover." },
+      { "name": "card-lift", "value": "0 40px 70px -40px rgba(0,0,0,.5), 0 4px 12px rgba(0,0,0,.2)", "purpose": "Booking reply card." }
+    ],
+    "motion": [
+      { "name": "ease-out", "value": "cubic-bezier(.23, 1, .32, 1)", "purpose": "Entrances, plate swaps, presses." },
+      { "name": "ease-io", "value": "cubic-bezier(.77, 0, .175, 1)", "purpose": "Cover portrait unveil." }
+    ],
+    "breakpoints": [ { "name": "nav", "value": "1100px" }, { "name": "mobile", "value": "960px" }, { "name": "phone", "value": "560px" } ]
+  },
+  "components": [
+    { "name": "Primary Button", "kind": "button", "refersTo": "button-primary", "description": "Main action, e.g. send on WhatsApp.",
+      "html": "<a class=\"ds-btn\">RESERVAR CITA</a>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;min-height:2.9rem;padding:.7rem 1.4rem;background:#1b3a9a;color:#fff;font:500 .8rem/1 Jost,sans-serif;letter-spacing:.16em;text-transform:uppercase;border-radius:0}.ds-btn:hover{background:#132c78}" },
+    { "name": "Chip", "kind": "chip", "refersTo": "chip", "description": "Selectable service.",
+      "html": "<button class=\"ds-chip\">Balayage</button>",
+      "css": ".ds-chip{background:transparent;border:1px solid rgba(18,18,22,.28);border-radius:999px;padding:.5rem .85rem;font:500 .8rem/1 Jost,sans-serif}.ds-chip:hover{background:#1b3a9a;color:#fff;border-color:#1b3a9a}" },
+    { "name": "Underline Input", "kind": "input", "description": "Booking text field.",
+      "html": "<input class=\"ds-input\" placeholder=\"Nombre\">",
+      "css": ".ds-input{border:0;border-bottom:1px solid rgba(18,18,22,.28);padding:.55rem 0;font:1rem Jost,sans-serif;background:transparent}.ds-input:focus{outline:none;border-bottom-color:#1b3a9a}" }
+  ],
+  "narrative": {
+    "northStar": "An issue of IRINA",
+    "overview": "A fashion monthly for one colourist: cobalt cover, Didone masthead, gloss-white pages, and booking as the bind-in reply card.",
+    "keyCharacteristics": ["Cobalt as the only hue", "Bodoni Moda + Jost, Prata for Cyrillic", "Real photography with shade names", "Square shapes, pills only for selection"],
+    "rules": [ { "name": "One chroma", "body": "Cobalt owns whole fields; photos carry all other colour.", "section": "colors" }, { "name": "Italic is state", "body": "Active shade names turn italic and cobalt.", "section": "typography" } ],
+    "dos": ["Use real work with Irina's own shade names", "Keep prices in config"],
+    "donts": ["No kickers above headings", "No em dashes", "No third-party logos in photos"]
+  }
+}
