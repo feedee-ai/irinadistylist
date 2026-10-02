@@ -435,6 +435,8 @@
       }
       err.hidden = true;
       this.href = waLink(composeMessage());
+      var stub = $(".card-stub");
+      if (!matchMedia("(prefers-reduced-motion: reduce)").matches) { stub.classList.remove("is-torn"); void stub.offsetWidth; stub.classList.add("is-torn"); }
     });
 
     window.addEventListener("scroll", onScroll, { passive: true });

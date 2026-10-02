@@ -282,9 +282,9 @@ window.SITE_CONTENT = {
 
   /* Shade index: real posts, shade names as Irina captions them. */
   shades: [
-    { name: "Golden Blonde",     fam: "blonde",   img: "shade-golden-blonde",    code: "DUBBS8GjEHc", date: "2026-01" },
-    { name: "Vanilla Blonde",    fam: "blonde",   img: "cover-vanilla",          code: "DP4MSj1jENS", date: "2025-10" },
     { name: "Honey Blonde",      fam: "blonde",   img: "shade-honey-blonde",     code: "DTaaiiKjDBY", date: "2026-01" },
+    { name: "Vanilla Blonde",    fam: "blonde",   img: "cover-vanilla",          code: "DP4MSj1jENS", date: "2025-10" },
+    { name: "Golden Blonde",     fam: "blonde",   img: "shade-golden-blonde",    code: "DUBBS8GjEHc", date: "2026-01" },
     { name: "Champagne Bronde",  fam: "bronde",   img: "shade-champagne-bronde", code: "DboCO3etNuh", date: "2026-08" },
     { name: "Soft Bronde",       fam: "bronde",   img: "shade-soft-bronde",      code: "Ddn6OYFNli_", date: "2026-09" },
     { name: "Almond Honey",      fam: "bronde",   img: "shade-almond-honey",     code: "DbtDI89NKk5", date: "2026-08" },
@@ -298,10 +298,10 @@ window.SITE_CONTENT = {
   ],
 
   pairs: [
-    { key: "caramel",  title: { es: "Caramel Balayage", en: "Caramel Balayage", ru: "Caramel Balayage" },
-      note: { es: "Presentado a los Oneshot Hair Awards 2026", en: "Entered in the Oneshot Hair Awards 2026", ru: "Работа для конкурса Oneshot Hair Awards 2026" } },
     { key: "honey",    title: { es: "Honey Blonde", en: "Honey Blonde", ru: "Honey Blonde" },
       note: { es: "De castaño a miel en una sesión de color", en: "From brown to honey in one colour session", ru: "Из каштанового в медовый за один визит" } },
+    { key: "caramel",  title: { es: "Caramel Balayage", en: "Caramel Balayage", ru: "Caramel Balayage" },
+      note: { es: "Presentado a los Oneshot Hair Awards 2026", en: "Entered in the Oneshot Hair Awards 2026", ru: "Работа для конкурса Oneshot Hair Awards 2026" } },
     { key: "swiss",    title: { es: "Desde Suiza, solo para el color", en: "Flew in from Switzerland for the colour", ru: "Прилетела из Швейцарии ради цвета" },
       note: { es: "Rubio frío, octubre de 2024", en: "Cool blonde, October 2024", ru: "Холодный блонд, октябрь 2024" } },
     { key: "brunette", title: { es: "Brunette Balayage", en: "Brunette Balayage", ru: "Brunette Balayage" },
@@ -363,7 +363,7 @@ window.SITE_CONTENT = {
       es: "Desfile de Carlos Haro en la tercera edición de la semana de la moda de Valencia.",
       en: "Carlos Haro's show at the third edition of Valencia's fashion week.",
       ru: "Показ Carlos Haro на третьей Неделе моды в Валенсии." },
-    { year: "2025", title: "Hair Fest BCN",
+    { year: "2025", title: "Pelo Fest Barcelona",
       es: "Pelo Fest Barcelona, el festival de peluqueros profesionales.",
       en: "Pelo Fest Barcelona, the festival for professional hairdressers.",
       ru: "Pelo Fest Barcelona, фестиваль профессиональных парикмахеров." },
