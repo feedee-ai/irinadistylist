@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "allow": [
+      "Bash(gh *)",
+      "Bash(vercel *)",
+      "Bash(npx vercel *)",
+      "Bash(git push *)"
+    ],
+    "ask": [
+      "Bash(gh repo delete *)",
+      "Bash(gh repo archive *)",
+      "Bash(gh repo edit *--visibility*)",
+      "Bash(gh release delete *)",
+      "Bash(gh secret delete *)",
+      "Bash(vercel remove *)",
+      "Bash(vercel rm *)",
+      "Bash(vercel project rm *)",
+      "Bash(vercel project remove *)",
+      "Bash(vercel domains rm *)",
+      "Bash(vercel domains remove *)",
+      "Bash(vercel dns rm *)",
+      "Bash(vercel env rm *)",
+      "Bash(vercel alias rm *)",
+      "Bash(vercel rollback *)",
+      "Bash(git push --force *)",
+      "Bash(git push -f *)"
+    ]
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup",
+        "hooks": [
+          { "type": "command", "command": "\"$CLAUDE_PROJECT_DIR\"/.claude/hooks/session-start.sh" }
+        ]
+      }
+    ]
+  }
+}
