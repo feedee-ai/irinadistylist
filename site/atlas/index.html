@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Atlas de tonos · Irina Dinga, hairstylist en Valencia</title>
+<meta name="description" content="Atlas de tonos de Irina Dinga, hairstylist en Ruzafa, Valencia: trece colores reales con nombre. Elige tu tono y reserva por WhatsApp. 5,0 en Google, 197 reseñas.">
+<meta name="theme-color" content="#141516">
+<meta property="og:title" content="Atlas de tonos · Irina Dinga">
+<meta property="og:image" content="../assets/img/og.jpg">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" as="font" type="font/woff2" href="../assets/fonts/spectral-300-italic-latin.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="../assets/fonts/onest-400-normal-latin.woff2" crossorigin>
+<link rel="stylesheet" href="../css/fonts-atlas.css">
+<link rel="stylesheet" href="../css/atlas.css">
+</head>
+<body>
+<a class="skip" href="#ficha" data-i18n="skip">Saltar al contenido</a>
+
+<header class="nav" id="nav">
+  <a class="logo" href="#atlas">Irina Dinga</a>
+  <nav class="nav-links" aria-label="Principal">
+    <a href="#ficha" data-a="navAtlas">Atlas</a>
+    <a href="#metodo" data-a="navMethod">Método</a>
+    <a href="#cambios" data-a="navShifts">Antes y después</a>
+    <a href="#opiniones" data-a="navReviews">Opiniones</a>
+    <a href="#estudio" data-a="navStudio">Estudio</a>
+  </nav>
+  <div class="nav-tools">
+    <div class="lang" role="group" aria-label="Idioma">
+      <button type="button" data-lang="es" aria-pressed="true">ES</button>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      <button type="button" data-lang="ru" aria-pressed="false">RU</button>
+    </div>
+    <a class="btn btn-shade btn-sm" href="#reserva" data-a="navBook">Reservar</a>
+  </div>
+</header>
+
+<main>
+<!-- HERO: the fan -->
+<section class="hero" id="atlas" aria-labelledby="hero-title">
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <h1 id="hero-title"><span class="h1-main" data-a="heroTitle">Atlas de tonos</span><span class="h1-sub" data-a="heroKickerName">Irina Dinga · Hairstylist en Valencia</span></h1>
+      <p class="hero-lead" data-a="heroLead">Trece colores reales salidos de su sillón en Ruzafa, cada uno con su nombre.</p>
+
+      <div class="readout" aria-live="polite">
+        <span class="ro-n" id="ro-n">01</span>
+        <span class="ro-name" id="ro-name">Golden Blonde</span>
+        <span class="ro-chips"><i id="ro-light"></i><i id="ro-dark"></i></span>
+      </div>
+
+      <div class="hero-actions">
+        <a class="btn btn-shade" href="#reserva" id="hero-cta" data-a="ctaShade">Reservar este tono</a>
+        <p class="hero-rating"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.83 6.06 6.65.78-4.92 4.55 1.3 6.57L12 17.27l-5.86 3.29 1.3-6.57L2.52 9.44l6.65-.78z"/></svg><span data-a="rating">5,0 en Google · 197 reseñas</span></p>
+      </div>
+    </div>
+
+    <div class="fan-wrap">
+      <div class="fan" id="fan" aria-hidden="true"></div>
+      <p class="fan-hint" data-a="heroHint">Toca un mechón del abanico</p>
+    </div>
+  </div>
+  <div class="names" role="listbox" aria-label="Tonos" id="names"></div>
+</section>
+
+<!-- SHADE CARD -->
+<section class="ficha" id="ficha" aria-labelledby="ficha-name">
+  <div class="wrap ficha-grid">
+    <figure class="ficha-photo" id="ficha-photo"></figure>
+    <div class="ficha-body">
+      <div class="ficha-top">
+        <span class="ficha-n" id="ficha-n">01</span>
+        <div class="ficha-nav">
+          <button class="round" type="button" id="prev" aria-label="Tono anterior" data-a-attr="aria-label:prevShade"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+          <button class="round" type="button" id="next" aria-label="Tono siguiente" data-a-attr="aria-label:nextShade"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+        </div>
+      </div>
+      <h2 class="ficha-name" id="ficha-name">Golden Blonde</h2>
+      <p class="ficha-fam" id="ficha-fam">Rubio</p>
+      <div class="swatches">
+        <div class="sw sw-light"><span class="sw-chip" id="sw-light"></span><span class="sw-label" data-a="light">Luz</span><span class="sw-hex" id="sw-light-hex"></span></div>
+        <div class="sw sw-dark"><span class="sw-chip" id="sw-dark"></span><span class="sw-label" data-a="shadow">Sombra</span><span class="sw-hex" id="sw-dark-hex"></span></div>
+      </div>
+      <p class="ficha-note" data-a="sampled">Muestras medidas sobre la foto real del trabajo.</p>
+      <p class="ficha-meta"><span data-a="posted">Publicado en Instagram</span>, <span id="ficha-date"></span> · <a id="ficha-link" href="#" target="_blank" rel="noopener" data-a="seePost">Ver en Instagram</a></p>
+      <a class="btn btn-ink" href="#reserva" id="ficha-cta" data-a="ctaShade">Reservar este tono</a>
+    </div>
+  </div>
+</section>
+
+<!-- METHOD -->
+<section class="method" id="metodo" aria-labelledby="method-title">
+  <div class="wrap">
+    <div class="method-head">
+      <h2 class="h2" id="method-title" data-a="methodTitle">Antes del color, Irina te mira a ti</h2>
+      <p class="lede" data-a="methodLead">Un tono no se elige en una carta. Se elige en tu cara.</p>
+    </div>
+    <ol class="criteria">
+      <li><h3 data-a="m1t">Piel</h3><p data-a="m1"></p></li>
+      <li><h3 data-a="m2t">Ojos</h3><p data-a="m2"></p></li>
+      <li><h3 data-a="m3t">Cejas</h3><p data-a="m3"></p></li>
+      <li><h3 data-a="m4t">Historia del pelo</h3><p data-a="m4"></p></li>
+    </ol>
+    <div class="rule">
+      <div class="rule-left">
+        <p class="rule-text" data-a="ruleText">Si tu pelo no está listo para aclarar, hoy no se aclara.</p>
+      </div>
+      <figure class="rule-quote">
+        <blockquote><p data-a="ruleQuote"></p></blockquote>
+        <figcaption data-a="ruleCite">Arantxa M., reseña en Google</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- SHIFTS -->
+<section class="shifts" id="cambios" aria-labelledby="shifts-title">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="h2" id="shifts-title" data-a="shiftsTitle">De un tono a otro</h2>
+      <p class="lede" data-a="shiftsLead">El color medido en la foto de antes y en la de después.</p>
+    </div>
+    <ol class="shift-list" id="shift-list"></ol>
+  </div>
+</section>
+
+<!-- SPEC SHEET + REVIEWS -->
+<section class="spec" id="opiniones" aria-labelledby="spec-title">
+  <div class="wrap spec-grid">
+    <div>
+      <h2 class="h2" id="spec-title" data-a="specTitle">Ficha técnica</h2>
+      <dl class="spec-table">
+        <div><dt data-a="sp1"></dt><dd data-a="sp1v"></dd></div>
+        <div><dt data-a="sp2"></dt><dd data-a="sp2v"></dd></div>
+        <div><dt data-a="sp3"></dt><dd data-a="sp3v"></dd></div>
+        <div><dt data-a="sp4"></dt><dd data-a="sp4v"></dd></div>
+        <div><dt data-a="sp5"></dt><dd data-a="sp5v"></dd></div>
+        <div><dt data-a="sp6"></dt><dd data-a="sp6v"></dd></div>
+      </dl>
+    </div>
+    <div class="quotes" id="quotes"></div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" aria-labelledby="services-title">
+  <div class="wrap">
+    <h2 class="h2" id="services-title" data-a="servicesTitle">Carta de servicios</h2>
+    <p class="lede" data-i18n="servicesLede"></p>
+    <div class="svc-cols" id="svc-cols"></div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section class="book" id="reserva" aria-labelledby="book-title">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="h2" id="book-title" data-a="bookTitle">Reserva con tu tono</h2>
+      <p class="lede" data-a="bookLead"></p>
+    </div>
+    <form class="book-card" id="booking" novalidate>
+      <div class="book-main">
+        <fieldset class="field">
+          <legend data-a="fShade">Tono deseado</legend>
+          <div class="tress-pick" id="opt-shade"></div>
+        </fieldset>
+        <fieldset class="field">
+          <legend data-i18n="fService">Servicio</legend>
+          <div class="opt-grid" id="opt-service"></div>
+        </fieldset>
+        <fieldset class="field">
+          <legend data-i18n="fDay">Día</legend>
+          <div class="days" id="opt-day"></div>
+        </fieldset>
+        <fieldset class="field">
+          <legend data-i18n="fTime">Hora</legend>
+          <div class="times" id="opt-time"></div>
+        </fieldset>
+        <fieldset class="field">
+          <legend data-i18n="fYou">Tus datos</legend>
+          <div class="you-grid">
+            <label class="input"><span data-i18n="fName">Nombre</span><input id="f-name" type="text" autocomplete="given-name" maxlength="60" data-i18n-attr="placeholder:fNamePh"></label>
+            <div class="input"><span id="first-label" data-i18n="fFirst">¿Primera visita?</span>
+              <div class="seg" role="radiogroup" aria-labelledby="first-label">
+                <label><input type="radio" name="first" value="yes"><span data-i18n="yes">Sí</span></label>
+                <label><input type="radio" name="first" value="no"><span data-i18n="no">No</span></label>
+              </div>
+            </div>
+            <label class="input input-wide"><span data-i18n="fNote">Comentario (opcional)</span><textarea id="f-note" rows="2" maxlength="400" data-i18n-attr="placeholder:fNotePh"></textarea></label>
+          </div>
+        </fieldset>
+      </div>
+      <aside class="book-side" aria-live="polite">
+        <div class="side-tress" id="side-tress"></div>
+        <dl class="summary" id="summary"></dl>
+        <p class="err" id="book-err" hidden></p>
+        <a class="btn btn-shade btn-wide" id="send" href="#" target="_blank" rel="noopener"><span data-i18n="send">Enviar por WhatsApp</span></a>
+        <p class="side-note" data-i18n="sendNote"></p>
+      </aside>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="foot" id="estudio">
+  <div class="wrap foot-grid">
+    <div class="foot-brand"><p class="foot-logo">Irina Dinga</p><p class="foot-note" data-a="footNote"></p></div>
+    <div><h3 data-i18n="footAddress">Dirección</h3><p>C/ Puerto Rico, 51<br>L'Eixample · Ruzafa<br>46004 València</p><a class="foot-link" id="maps-link" href="#" target="_blank" rel="noopener" data-i18n="directions">Cómo llegar</a></div>
+    <div><h3 data-i18n="footHours">Horario</h3><p><span data-i18n="dayMonFri">Lunes a viernes</span><br>10:00 - 20:00<br><span data-i18n="daySat">Sábado</span><br>9:00 - 14:00</p></div>
+    <div><h3 data-i18n="footContact">Contacto</h3><p class="phone">+34 623 920 999</p><a class="foot-link" id="ig-link" href="#" target="_blank" rel="noopener">Instagram</a></div>
+  </div>
+  <p class="wrap foot-legal">© 2026 Irina Dinga. <span data-i18n="footRights">Todos los derechos reservados.</span></p>
+</footer>
+
+<div class="mcta" id="mcta"><a class="btn btn-shade btn-wide" href="#reserva" data-a="ctaShade">Reservar este tono</a></div>
+
+<script src="../js/config.js"></script>
+<script src="../js/content.js"></script>
+<script src="../js/atlas-content.js"></script>
+<script src="../js/atlas.js"></script>
+</body>
+</html>
